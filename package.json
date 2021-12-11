@@ -1,0 +1,25 @@
+{
+  "name": "numerological",
+  "version": "0.0.0-development",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "repository": "https://github.com/dzucconi/numerological",
+  "author": "Damon Zucconi",
+  "scripts": {
+    "build": "yarn clean && tsc -p .",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "yarn build",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/lodash.deburr": "^4.1.6",
+    "jest": "^27.4.3",
+    "ts-jest": "^27.1.1",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "lodash.deburr": "^4.1.0"
+  }
+}
